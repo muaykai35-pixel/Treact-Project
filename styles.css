@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #243e63;
 }
 
 html {
@@ -9,8 +11,9 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #243e63;
+    max-width: 100vw;
+    overflow-x: hidden;
+
     background: #ffffff;
     line-height: 1.6;
 }
@@ -121,7 +124,6 @@ input {
     display: flex;
     align-items: center;
     gap: 32px;
-
     font-size: 14px;
     font-weight: 600;
 }
@@ -131,19 +133,23 @@ input {
 }
 
 .nav-links a:hover {
-    color: #6415ff;
+    text-decoration: underline;
+    text-decoration-color: #6415ff;
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 6px;
 }
 
 .nav-links .signup {
     background: #6415ff;
     color: white;
-
     padding: 12px 25px;
     border-radius: 999px;
 }
 
 .nav-links .signup:hover {
-    background: #5012d3;
+    text-decoration: none;
+    background: #5010cf;
+    color: white;
 }
 
 .menu-button {
@@ -256,27 +262,24 @@ input {
 .trusted {
     max-width: 1000px;
     margin: auto;
-
-    padding: 30px 30px 100px;
-
-    text-align: center;
+    padding: 20px 20px 100px;
+    text-align: left;
+    margin-left: 0px;
 }
 
 .trusted p {
     color: #a0aec0;
-
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 800;
-
     letter-spacing: 2px;
-
     margin-bottom: 25px;
 }
 
 .trusted img {
-    width: 100%;
+    color: #a0aec0;
+    width: 50%;    /* smaller; height scales automatically */
     max-width: 800px;
-    margin: auto;
+    margin: left; /* space between image and text */
 }
 
 
@@ -600,70 +603,101 @@ input {
    TESTIMONIAL
 ========================================= */
 
-.testimonial {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    align-items: center;
-
-    gap: 80px;
+:root {
+  --purple: #6b16ff;
+  --navy: #1e3a5f;
+  --gray: #7b8394;
+  --dark: #444b5a;
 }
 
-.testimonial-image img {
-    width: 100%;
-
-    max-width: 500px;
-
-    margin: auto;
-
-    border-radius: 8px;
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* two equal columns */
+  align-items: center;              /* vertically center both sides */
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 30px;
+  font-family: "Inter", sans-serif;
 }
 
-.testimonial-content > p {
-    color: #7c8ba1;
-
-    margin-bottom: 20px;
+.illustration img {
+  width: 100%;
+  height: auto;
 }
 
-.stars {
-    color: #f6ad55;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 15px;
+/* Right column */
+.eyebrow {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.testimonial-content h3 {
-    color: #243e63;
+h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 12px 0 24px;
+}
+.accent { color: var(--purple); }
 
-    margin-bottom: 15px;
+.intro {
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 70px;   /* big gap before the testimonial */
 }
 
-.testimonial-content blockquote {
-    color: #7c8ba1;
-
-    font-size: 14px;
-
-    line-height: 1.8;
-
-    margin-bottom: 25px;
+h3 {
+  font-size: 20px;
+  color: var(--dark);
+  margin-bottom: 16px;
 }
 
-.customer {
-    display: flex;
-
-    flex-direction: column;
+.quote {
+  color: var(--dark);
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
 
-.customer strong {
-    color: #243e63;
+/* Author row: avatar + text on the left, arrows pushed right */
+.author-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-.customer span {
-    color: #a0aec0;
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;       /* circle */
+  object-fit: cover;        /* crops instead of squishing */
+}
 
-    font-size: 13px;
+.author strong {
+  display: block;
+  font-size: 20px;
+  color: var(--dark);
+}
+.author span { color: var(--gray); }
+
+.arrows {
+  margin-left: auto;        /* pushes arrows to the far right */
+  display: flex;
+  gap: 16px;
+}
+
+.arrows button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #eef1f6;
+  color: var(--purple);
+  font-size: 20px;
+  cursor: pointer;
 }
 
 
@@ -716,9 +750,9 @@ input {
 }
 
 .cta-primary {
-    background: white;
+    background: rgb(248, 95, 95);
 
-    color: #6415ff;
+    color: white;
 }
 
 .cta-secondary {
