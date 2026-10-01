@@ -5,10 +5,15 @@
   --light-gray: #aab2c0;
 }
 
+body {
+  margin: 0;
+  padding: 0px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 /* ================= HEADER ================= */
@@ -23,11 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 30px;
-}
-
-body {
-  padding-top: 72px;
+  padding: 20px 10px;
 }
 
 .brand {
