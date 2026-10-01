@@ -1,5 +1,5 @@
 /* =========================================================
-   TReact Website JavaScript
+   Treact Website JavaScript
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
