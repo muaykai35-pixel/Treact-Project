@@ -1,102 +1,56 @@
-// ==========================================
-// MOBILE MENU
-// ==========================================
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.querySelector('.nav-links');
 
-const menuButton = document.getElementById("menuButton");
-const navLinks = document.getElementById("navLinks");
-
-menuButton.addEventListener("click", function () {
-
-    navLinks.classList.toggle("active");
-
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
 });
 
+// Testimonial carousel
+const testimonials = [
+  {
+    initials: 'CH',
+    name: 'Charlotte Hale',
+    title: 'Director, Delos Inc.',
+    quote: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.'
+  },
+  {
+    initials: 'JD',
+    name: 'John Doe',
+    title: 'Founder, Acme Co.',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+  },
+  {
+    initials: 'MS',
+    name: 'Maria Santos',
+    title: 'Lead Designer, Umbrella',
+    quote: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.'
+  }
+];
 
-// Close mobile menu when a link is clicked
+let currentIndex = 0;
 
-const navigationLinks = document.querySelectorAll(".nav-links a");
+const quoteText = document.getElementById('quoteText');
+const authorName = document.getElementById('authorName');
+const authorTitle = document.getElementById('authorTitle');
+const avatarInitial = document.getElementById('avatarInitial');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-navigationLinks.forEach(function (link) {
+function renderTestimonial(index) {
+  const t = testimonials[index];
+  quoteText.textContent = t.quote;
+  authorName.textContent = t.name;
+  authorTitle.textContent = t.title;
+  avatarInitial.textContent = t.initials;
+}
 
-    link.addEventListener("click", function () {
-
-        navLinks.classList.remove("active");
-
-    });
-
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  renderTestimonial(currentIndex);
 });
 
-
-// ==========================================
-// EMAIL FORM
-// ==========================================
-
-const emailForm = document.querySelector(".email-form");
-
-emailForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    const email = emailForm.querySelector("input").value;
-
-    if (email) {
-
-        alert(
-            "Thanks! " + email +
-            " has been added."
-        );
-
-        emailForm.reset();
-
-    }
-
-});
-
-
-// ==========================================
-// BUY BUTTONS
-// ==========================================
-
-const buyButtons = document.querySelectorAll(".buy-button");
-
-buyButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        const card = button.closest(".price-card");
-
-        const plan = card.querySelector("h3").textContent;
-
-        alert(
-            "You selected the " +
-            plan +
-            " plan."
-        );
-
-    });
-
-});
-
-
-// ==========================================
-// GET STARTED BUTTONS
-// ==========================================
-
-const getStartedButtons =
-    document.querySelectorAll(".cta-primary");
-
-getStartedButtons.forEach(function (button) {
-
-    button.addEventListener("click", function (event) {
-
-        event.preventDefault();
-
-        document
-            .querySelector(".email-form")
-            .scrollIntoView({
-                behavior: "smooth"
-            });
-
-    });
-
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  renderTestimonial(currentIndex);
 });
