@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treact Project</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treact Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
   <body>
     <header class="header">
@@ -76,7 +75,6 @@
       </div>
     </section>
 
-    <!----- FEATURES SECTION------->
 
     <!----- FEATURES SECTION------->
 
@@ -186,7 +184,6 @@
       <!-- NEW: closes the grid -->
     </section>
 
-    <!----- QUALITY SECTION------->
 
     <!----- QUALITY SECTION------->
 
@@ -194,7 +191,7 @@
       <div class="quality-text">
         <span class="eyebrow">QUALITY WORK</span>
         <h2>
-          Designed &amp; Developed by <span class="accent">Professionals.</span>
+          Designed &amp; <br> Developed by <span class="accent"><br>Professionals.</span>
         </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam
@@ -212,7 +209,6 @@
       </div>
     </section>
 
-    <!----- STEPS SECTION------->
 
     <!----- STEPS SECTION------->
 
@@ -410,8 +406,148 @@
   </div>
 </section>
 
+<!----- TESTIMONIALS SECTION------->
 
+<section class="testimonials" aria-labelledby="t-title">
+  <div class="t-wrap">
 
+    <div class="t-art">
+      <img src="Assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="" />
+    </div>
+
+    <div>
+      <span class="t-eyebrow">TESTIMONIALS</span>
+      <h2 class="t-heading" id="t-title">Our Clients <span>Love Us.</span></h2>
+      <p class="t-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+
+      <div class="t-stars" role="img" aria-label="5 out of 5 stars">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path id="t-star" d="M12 2l3 6.5 7 .9-5.1 4.8 1.3 7L12 17.8 5.8 21.2l1.3-7L2 9.4l7-.9z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24"><use href="#t-star"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24"><use href="#t-star"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24"><use href="#t-star"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24"><use href="#t-star"/></svg>
+      </div>
+       <div id="t-slide" class="t-fade" aria-live="polite">
+  <div class="t-card">
+    <h3 id="q-title">Amazing User Experience</h3>
+    <p id="q-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+
+  <div class="t-foot">
+    <div class="t-person">
+      <img class="t-avatar" id="q-av" src="Assets/photo-1494790108377-be9c29b29330.avif" alt="Charlotte Hale" />
+      <div>
+        <p class="t-name" id="q-name">Charlotte Hale</p>
+        <p class="t-role" id="q-role">Director, Delos Inc.</p>
+      </div>
+    </div>
+
+    <div class="t-nav">
+      <button id="prev" aria-label="Previous testimonial">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      </button>
+      <i></i>
+      <button id="next" aria-label="Next testimonial">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+<!----- CTA BANNER ------->
+
+<section class="cta" aria-labelledby="cta-title">
+  <div class="cta-box">
+    <h2 class="cta-title" id="cta-title">Developers all over the world are <br> happily using Treact.</h2>
+    <div class="cta-actions">
+      <a href="#" class="cta-btn cta-btn-primary">Get Started</a>
+      <a href="#" class="cta-btn cta-btn-outline">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!----- FOOTER ------->
+
+<footer class="ft">
+  <div class="ft-inner">
+
+    <nav class="ft-cols" aria-label="Footer">
+      <div class="ft-col">
+        <h3>Main</h3>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h3>Press</h3>
+        <ul>
+          <li><a href="#">Logos</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">Office</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h3>Team</h3>
+        <ul>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Founders</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Onboarding</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="ft-bottom">
+      <a href="#" class="ft-brand" aria-label="Treact Inc. home">
+        <span class="ft-logo">T</span>
+        <span class="ft-brand-text">Treact Inc.</span>
+      </a>
+
+      <p class="ft-copy">&copy; 2018 Treact Inc. All Rights Reserved.</p>
+
+      <div class="ft-social">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.9c0-.7.2-1.1 1.2-1.1H17V3h-2.6C11.9 3 11 4.5 11 6.6v1.9H9V11.3h2V21h3v-9.7h2.4l.4-2.8H14z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.5-2.4.7.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7C8.4 8.8 5.4 7.200 3.400 4.700c-1.100 1.900-.5 4.200 1.200 5.400-.7 0-1.300-.2-1.900-.5 0 2 1.400 3.700 3.300 4.100-.6.2-1.200.2-1.900.1.500 1.600 2 2.800 3.800 2.900A8.200 8.200 0 0 1 2 18.400 11.600 11.600 0 0 0 8.300 20.200c7.500 0 11.700-6.400 11.400-12.100.8-.6 1.500-1.300 2.100-2.200z"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.600 7.200a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800c.2.900.9 1.600 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3L10 15z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
 
   </body>
 </html>
