@@ -1,54 +1,343 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Treact Project</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treact Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <header class="header">
-  <div class="container header-inner">
-    <div class="brand">
-      <span class="logo-box">T</span>
-      <span class="brand-text">Treact</span>
-    </div>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo-box">T</span>
+          <span class="brand-text">Treact</span>
+        </div>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact Us</a>
-      <a href="#" class="nav-login">Login</a>
-      <a href="#" class="btn-outline-nav">Sign Up</a>
-    </nav>
+        <nav class="nav-links" id="navLinks">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact Us</a>
+          <a href="#" class="nav-login">Login</a>
+          <a href="#" class="btn-outline-nav">Sign Up</a>
+        </nav>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
-  </div>
-</header>
-
-<section class="hero container">
-  <div class="hero-text">
-    <h1>Beautiful React <br>Templates <span class="accent">for you.</span></h1>
-    <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-
-    <form class="email-form" id="emailForm">
-      <input type="email" id="emailInput" placeholder="Your E-mail Address" required>
-      <button type="submit" class="btn-primary">Get Started</button>
-    </form>
-    <p class="form-message" id="formMessage"></p>
-
-    <div class="trusted">
-      <span>OUR TRUSTED CUSTOMERS</span>
-      <div class="trusted-logos">
-        <img src="Assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Customers">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          ☰
+        </button>
       </div>
-    </div>
-  </div>
+    </header>
 
-  <div class="hero-image">
-    <img src="Assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Designer at desk illustration">
-  </div>
-</section>
- 
+    <!----- HERO SECTION------->
+
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>
+          Beautiful React <br />Templates <span class="accent">for you.</span>
+        </h1>
+        <p>
+          Our templates are easy to setup, understand and customize. Fully
+          modular components with a variety of pages and components.
+        </p>
+
+        <form class="email-form" id="emailForm">
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Your E-mail Address"
+            required
+          />
+          <button type="submit" class="btn-primary">Get Started</button>
+        </form>
+        <p class="form-message" id="formMessage"></p>
+
+        <div class="trusted">
+          <span>OUR TRUSTED CUSTOMERS</span>
+          <div class="trusted-logos">
+            <img
+              src="Assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+              alt="Customers"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="Assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+          alt="Designer at desk illustration"
+        />
+      </div>
+    </section>
+
+    <!----- FEATURES SECTION------->
+
+    <!----- FEATURES SECTION------->
+
+    <section class="features section" id="features">
+      <div class="section-heading">
+        <span class="eyebrow">FEATURES</span>
+        <h2>We Have Amazing <span class="accent">Service.</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- NEW: opens the grid -->
+
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <img
+                src="Assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+              />
+            </div>
+            <h3>Secure</h3>
+          </div>
+          <p>
+            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+            nostrud.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <img
+                src="Assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+              />
+            </div>
+            <h3>24/7 Support</h3>
+          </div>
+          <p>
+            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+            nostrud.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <img
+                src="Assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+              />
+            </div>
+            <h3>Customizable</h3>
+          </div>
+          <p>
+            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+            nostrud.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <img
+                src="Assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+              />
+            </div>
+            <h3>Reliable</h3>
+          </div>
+          <p>
+            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+            nostrud.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <img
+                src="Assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+              />
+            </div>
+            <h3>Fast</h3>
+          </div>
+          <p>
+            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+            nostrud.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <img
+                src="Assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+              />
+            </div>
+            <h3>Easy</h3>
+          </div>
+          <p>
+            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+            nostrud.
+          </p>
+        </div>
+      </div>
+      <!-- NEW: closes the grid -->
+    </section>
+
+    <!----- QUALITY SECTION------->
+
+    <!----- QUALITY SECTION------->
+
+    <section class="quality" id="quality">
+      <div class="quality-text">
+        <span class="eyebrow">QUALITY WORK</span>
+        <h2>
+          Designed &amp; Developed by <span class="accent">Professionals.</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam
+          cupiditate commodi qui excepturi laborum adipisci officiis, corporis
+          possimus. Reiciendis?
+        </p>
+        <a href="#" class="btn-primary">Learn More</a>
+      </div>
+
+      <div class="quality-image">
+        <img
+          src="Assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
+          alt="Treact template preview"
+        />
+      </div>
+    </section>
+
+    <!----- STEPS SECTION------->
+
+    <!----- STEPS SECTION------->
+
+    <section class="steps" id="steps">
+      <div class="steps-image">
+        <img
+          src="Assets/hero-screenshot-2.241aac1fbc66db29d873.png"
+          alt="Treact on a laptop"
+        />
+      </div>
+
+      <div class="steps-text">
+        <span class="eyebrow">STEPS</span>
+        <h2>Easy to <span class="accent">Get Started.</span></h2>
+
+        <div class="step">
+          <span class="step-number">01</span>
+          <div class="step-content">
+            <h3>Register</h3>
+            <p>Create an account with us using Google or Facebook.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span class="step-number">02</span>
+          <div class="step-content">
+            <h3>Download</h3>
+            <p>
+              Browse and Download the template that you like from the
+              marketplace.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span class="step-number">03</span>
+          <div class="step-content">
+            <h3>Run</h3>
+            <p>
+              Follow the instructions to setup and customize the template to
+              your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- VALUES SECTION------->
+
+    <section class="values" id="values">
+      <div class="values-text">
+        <span class="eyebrow">VALUES</span>
+        <h2>We Always Abide by Our <span class="accent">Principles.</span></h2>
+        <p class="values-intro">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <div class="values-list">
+          <div class="value-item">
+            <div class="value-header">
+              <span class="value-icon green">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="2" x2="12" y2="22" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </span>
+              <h3>Affordable</h3>
+            </div>
+            <p>
+              We promise to offer you the best rate we can - at par with the
+              industry standard.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="value-header">
+              <span class="value-icon red">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </span>
+              <h3>Professionalism</h3>
+            </div>
+            <p>
+              We assure you that our templates are designed and created by
+              professional designers.
+            </p>
+          </div>
+        </div>
+
+        <a href="#" class="btn-primary">Learn More</a>
+      </div>
+
+      <div class="values-image">
+        <img
+          src="Assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
+          alt="Designer presenting a flow on an easel"
+        />
+      </div>
+    </section>
+
+    <!----- PRICING SECTION------->
+
+    <!----- TESTIMONIALS SECTION------->
+
+    <!----- DEVELOPERS SECTION------->
+
+    <!----- FOOTER SECTIONS------->
+  </body>
+</html>
